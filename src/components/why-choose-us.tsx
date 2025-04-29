@@ -30,6 +30,33 @@ function Feature({ icon, title, description }: FeatureProps) {
 }
 
 export function WhyChooseUs() {
+	const features: FeatureProps[] = [
+		{
+			icon: "/images/icon-1.png",
+			title: "Regulated",
+			description:
+				"The copy trading platform is regulated. Our technology partner is regulated. And so are we, as a brokerage. We operate under strict compliance because your trust and peace of mind are everything."
+		},
+		{
+			icon: "/images/icon-2.png",
+			title: "0 Commissions",
+			description:
+				"When investing, the small margins matter. Blackwell Invest offers 0 commissions investing, and 0 cost to install our app."
+		},
+		{
+			icon: "/images/icon-3.png",
+			title: "User-friendly",
+			description:
+				"With an intuitive interface, easy trade execution, and hassle-free management, copying top traders has never been simpler. Trade smarter, not harder!"
+		},
+		{
+			icon: "/images/icon-4.png",
+			title: "Tier 1 liquidity",
+			description:
+				"Blackwell Invest sources the best liquidity to provide a deep product range and broad market access. Fast order execution and transparent pricing."
+		}
+	];
+
 	return (
 		<div className="py-12 relative md:mt-[400px]">
 			{/* Background Image */}
@@ -50,29 +77,12 @@ export function WhyChooseUs() {
 				</p>
 
 				<div className="space-y-4 md:mx-20">
-					<Feature
-						icon="/images/icon-1.png"
-						title="Regulated"
-						description="The copy trading platform is regulated. Our technology partner is regulated. And so are we, as a brokerage. We operate under strict compliance because your trust and peace of mind are everything."
-					/>
-
-					<Feature
-						icon="/images/icon-2.png"
-						title="0 Commissions"
-						description="When investing, the small margins matter. Blackwell Invest offers 0 commissions investing, and 0 cost to install our app."
-					/>
-
-					<Feature
-						icon="/images/icon-3.png"
-						title="User-friendly"
-						description="With an intuitive interface, easy trade execution, and hassle-free management, copying top traders has never been simpler. Trade smarter, not harder!"
-					/>
-
-					<Feature
-						icon="/images/icon-4.png"
-						title="Tier 1 liquidity"
-						description="Blackwell Invest sources the best liquidity to provide a deep product range and broad market access. Fast order execution and transparent pricing."
-					/>
+					{features.map((feature, idx) => (
+						<Feature
+							key={idx}
+							{...feature}
+						/>
+					))}
 				</div>
 
 				<div className="flex justify-center mt-8">
