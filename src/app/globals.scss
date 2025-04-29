@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,4 +31,8 @@
 body {
   background-color: #3a53ba;
   color: white;
+}
+
+.orange-button {
+  background-color: $color-orange;
 }
