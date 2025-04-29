@@ -55,7 +55,7 @@ export function Header() {
 					</div>
 				)}
 
-				<div className="flex items-center justify-center gap-2 w-1/4">
+				<div className="flex items-center justify-end gap-2 w-1/4">
 					{user ? (
 						<div className="md:flex gap-2 justify-center items-center hidden">
 							<p className="flex flex-wrap  overflow-hidden text-ellipsis">
