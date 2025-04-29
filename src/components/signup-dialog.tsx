@@ -48,7 +48,7 @@ const signupSchema = z
 		mobile: z
 			.string()
 			.min(1, "Mobile number is required")
-			.min(8, "Mobile number must be at least 10 characters"),
+			.min(8, "Mobile number must be at least 8 characters"),
 		country: z.string().min(1, "Country is required"),
 		password: z
 			.string()
