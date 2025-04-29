@@ -95,7 +95,8 @@ export const loginUser = (email, password) => {
 
 			if (user) {
 				// Don't include password in the stored user data
-				const { ...userData } = user;
+				const { password, ...userData } = user;
+				void password;
 				storeUser(userData);
 				resolve(userData);
 			} else {
@@ -134,7 +135,8 @@ export const registerUser = (userData) => {
 				addUser(newUser);
 
 				// Don't include password in the stored user data
-				const { ...newUserData } = newUser;
+				const { password, ...newUserData } = newUser;
+				void password;
 				storeUser(newUserData);
 				resolve(newUserData);
 			} else {
