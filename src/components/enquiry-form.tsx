@@ -164,7 +164,7 @@ export function EnquiryForm() {
 										<SelectTrigger className="bg-white/10 border-white/20 text-white h-14">
 											<SelectValue placeholder="Country of Residence" />
 										</SelectTrigger>
-										<SelectContent className="bg-[#3A53BA] border-white/20">
+										<SelectContent className="bg-background border-white/20">
 											<SelectItem value="Malaysia">
 												Malaysia
 											</SelectItem>

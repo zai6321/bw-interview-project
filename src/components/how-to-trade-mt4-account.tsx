@@ -111,6 +111,7 @@ export function HowToTradeMt4Account() {
 													width={70}
 													height={70}
 													className="object-contain"
+													style={{ width: "auto" }}
 												/>
 											</div>
 										</>
