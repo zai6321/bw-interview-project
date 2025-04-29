@@ -5,11 +5,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				darkBlue: "#040dbf",
-				lightBlue: "#01f2f2",
+				"dark-blue": "#040dbf",
+				"light-blue": "#01f2f2",
 				gold: "#f2df79",
 				orange: "#F37406",
-				background: "#3A53BA",
+				// background: "#3A53BA",
+			},
+			fontFamily: {
+				title: ["ATRotisSemiSans-ExtraBold", "sans-serif"],
+				subtitle: ["ATRotisSemiSans-Light", "sans-serif"],
 			},
 		},
 	},

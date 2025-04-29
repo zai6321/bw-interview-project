@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ATRotisSemiSans-ExtraBold";
+  src: url("/fonts/ATRotisSemiSans-ExtraBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ATRotisSemiSans-Light";
+  src: url("/fonts/ATRotisSemiSans-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+.countdown-item {
+  @apply flex flex-col items-center justify-center;
+}
+
+.countdown-value {
+  @apply text-3xl;
+}
+
+.countdown-label {
+  @apply text-xs text-white/80;
+}
+
+body {
+  background-color: #3a53ba;
+  color: white;
+}
