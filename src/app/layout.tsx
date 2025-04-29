@@ -4,6 +4,7 @@ import "./globals.scss";
 import { Toaster } from "@/components/ui/sonner";
 import { DialogProvider } from "./providers/dialog-provider";
 import { AuthProvider } from "./providers/auth-provider";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
 					<DialogProvider>
 						{children}
 						<Toaster richColors />
+						<ScrollToTop/>
 					</DialogProvider>
 				</AuthProvider>
 			</body>
